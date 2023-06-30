@@ -1,34 +1,9 @@
 import React from "react";
 import { Box, Typography, Card, CardContent, CardMedia } from "@mui/material";
-import kellyImage from "../images/kelly.jpg";
-import lilianaImage from "../images/liliana.jpg";
-import claudiaImage from "../images/claudia.jpg";
-import rossyImage from "../images/rossy.jpg";
-import lennysImage from "../images/lennys.jpg";
 import alleenImage from "../images/alleen.png";
 
 const About = () => {
   const cardsData = [
-    {
-      title: "Kelly Salas",
-      image: kellyImage,
-    },
-    {
-      title: "Liliana Osuna",
-      image: lilianaImage,
-    },
-    {
-      title: "Claudia Bazan",
-      image: claudiaImage,
-    },
-    {
-      title: "Rossy Mujica",
-      image: rossyImage,
-    },
-    {
-      title: "Lennys Gonzalez",
-      image: lennysImage,
-    },
     {
       title: "Alleen Uzcategui",
       image: alleenImage,
@@ -57,13 +32,16 @@ const About = () => {
             transform: "translate(-50%, -50%)",
             textAlign: "center",
             p: 3,
-            
+
             color: "white",
             width: "80%",
             maxWidth: 800,
           }}
         >
-          <Typography variant="h4"sx={{ color: "#1E4595", fontWeight: "bold" }}>
+          <Typography
+            variant="h4"
+            sx={{ color: "#1E4595", fontWeight: "bold" }}
+          >
             Sobre Nosotros
           </Typography>
         </Box>
@@ -86,10 +64,23 @@ const About = () => {
         }}
       >
         <Typography variant="h6" gutterBottom>
-          Somos Kelly, Liliana, Lennys, Claudia, Rossi y Alleen, conformamos un
-          equipo de 6 chicas que un día decidieron introducirse en el mundo de
-          la Tecnología, y gracias a una oportunidad que se nos presentó
-          obteniendo una Beca en el programa Nosotras Conectadas organizado por la Dirección de Colectividades de Buenos Aires, Loreal y Acnur, llegamos a la Academia Numen y hoy somos estudiantes de la carrera Full Stack. Durante varios meses hemos estado aprendiendo diferentes tecnologías con muchos desafíos y dedicación. Hoy que nos encontramos en la recta final, implementamos los conocimientos adquiridos y presentamos nuestro proyecto sobre Aplicación Meteorológica.
+          ¡Bienvenidos a mi proyecto de pronóstico del clima!En esta plataforma,
+          mi objetivo principal ha sido brindarles una experiencia excepcional
+          al obtener información precisa y actualizada sobre el clima de
+          diferentes localidades. Diseñé una página de bienvenida intuitiva
+          donde simplemente deben hacer clic en el botón de ingreso para ser
+          redirigidos al sitio principal. Esta función permite una navegación
+          fluida y los lleva rápidamente a la información que necesitan. Para
+          ofrecerles una experiencia aún mejor, creé un backend simulado
+          utilizando JSON-Server. Esto me permitió alojar y gestionar
+          eficientemente la información de mi API. De esta manera, pueden
+          disfrutar de la experiencia de una aplicación en tiempo real, con
+          datos actualizados constantemente. Para asegurarme de que los datos
+          que reciben sean confiables y precisos, integré la API de WeatherAPI.
+          Esta API me proporciona información detallada sobre el clima en
+          cualquier ubicación específica. Así, pueden estar al tanto de las
+          condiciones climáticas actuales y futuras, y planificar sus
+          actividades en consecuencia.
         </Typography>
         <br />
         <Box
@@ -100,39 +91,12 @@ const About = () => {
             mt: 4,
           }}
         >
-          {/* Renderizar las primeras tres tarjetas */}
-          {cardsData.slice(0, 3).map((card, index) => (
+          {/* Renderizar la primera tarjeta */}
+          {cardsData.slice(0, 1).map((card, index) => (
             <Card key={index} sx={{ width: 300, mr: 2 }}>
               <CardMedia
                 component="img"
                 height="280"
-                image={card.image}
-                alt={card.title}
-                style={{ objectFit: "cover", width: "100%" }}
-              />
-              <CardContent>
-                <Typography variant="h5" component="div">
-                  {card.title}
-                </Typography>
-              </CardContent>
-            </Card>
-          ))}
-        </Box>
-
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            flexWrap: "wrap",
-            mt: 4,
-          }}
-        >
-          {/* Renderizar las siguientes tres tarjetas */}
-          {cardsData.slice(3).map((card, index) => (
-            <Card key={index} sx={{ width: 300, mb: 2, mx: 1 }}>
-              <CardMedia
-                component="img"
-                height="270"
                 image={card.image}
                 alt={card.title}
                 style={{ objectFit: "cover", width: "100%" }}

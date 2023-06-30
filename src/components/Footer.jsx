@@ -39,7 +39,7 @@ const Footer = () => {
             },
           }}
         >
-           &copy; Junio, 2023  
+           &copy; Alleen, Junio 2023  
         </Typography>
       </Box>
     </>
