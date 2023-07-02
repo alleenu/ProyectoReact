@@ -1,12 +1,12 @@
 import React from "react";
 import { Box, Typography, Card, CardContent, CardMedia } from "@mui/material";
-import alleenImage from "../images/alleen.png";
+import equipoImagen from "../images/equipo.jpg";
 
 const About = () => {
   const cardsData = [
     {
-      title: "Alleen Uzcategui",
-      image: alleenImage,
+      title: "Equipo Desarrollo",
+      image: equipoImagen,
     },
   ];
 
@@ -34,7 +34,7 @@ const About = () => {
             p: 3,
 
             color: "white",
-            width: "80%",
+            width: "100%",
             maxWidth: 800,
           }}
         >
@@ -64,23 +64,23 @@ const About = () => {
         }}
       >
         <Typography variant="h6" gutterBottom>
-          ¡Bienvenidos a mi proyecto de pronóstico del clima!En esta plataforma,
-          mi objetivo principal ha sido brindarles una experiencia excepcional
+          ¡Bienvenidos a este proyecto de pronóstico del clima! En esta
+          plataforma, nos esforzamos por brindarles una experiencia excepcional
           al obtener información precisa y actualizada sobre el clima de
-          diferentes localidades. Diseñé una página de bienvenida intuitiva
-          donde simplemente deben hacer clic en el botón de ingreso para ser
-          redirigidos al sitio principal. Esta función permite una navegación
-          fluida y los lleva rápidamente a la información que necesitan. Para
-          ofrecerles una experiencia aún mejor, creé un backend simulado
-          utilizando JSON-Server. Esto me permitió alojar y gestionar
-          eficientemente la información de mi API. De esta manera, pueden
-          disfrutar de la experiencia de una aplicación en tiempo real, con
-          datos actualizados constantemente. Para asegurarme de que los datos
-          que reciben sean confiables y precisos, integré la API de WeatherAPI.
-          Esta API me proporciona información detallada sobre el clima en
-          cualquier ubicación específica. Así, pueden estar al tanto de las
-          condiciones climáticas actuales y futuras, y planificar sus
-          actividades en consecuencia.
+          diferentes localidades. Hemos diseñado una página de bienvenida
+          intuitiva que les permite acceder fácilmente a la información que
+          necesitan. Al hacer clic en el botón de ingreso, serán redirigidos al
+          sitio principal, lo que garantiza una navegación fluida y rápida. Para
+          mejorar aún más su experiencia, hemos creado un backend simulado
+          utilizando JSON-Server. Esto nos permite alojar y gestionar
+          eficientemente la información de nuestra API, brindándoles una
+          experiencia de aplicación en tiempo real con datos constantemente
+          actualizados. Nuestra integración con la API de WeatherAPI nos asegura
+          que los datos que reciben sean confiables y precisos. Esta API nos
+          proporciona información detallada sobre el clima en cualquier
+          ubicación específica. De esta manera, podrán estar al tanto de las
+          condiciones climáticas actuales y futuras, lo que les permitirá
+          planificar sus actividades de manera más efectiva.
         </Typography>
         <br />
         <Box
